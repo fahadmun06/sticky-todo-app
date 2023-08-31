@@ -1,0 +1,53 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #858680;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #171427;
+}
+
+.content-home {
+    margin: 24px 6px;
+    padding: 10px 30px;
+    max-height: 85vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border-radius: 10px;
+}
+
+.list-card {
+    min-width: 350px;
+    min-height: 350px;
+    // overflow: scroll;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .list-card {
+        min-width: 250px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 569px) {
+    .list-card {
+        min-width: 250px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 568px) {
+    .list-card {
+        min-width: 250px;
+        min-height: 250px;
+    }
+}
+
+.sticky-wall {
+    @media (max-width: 568px) {
+        display: none;
+    }
+}
